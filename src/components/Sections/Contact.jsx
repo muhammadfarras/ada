@@ -32,7 +32,7 @@ export default function Contact() {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton onClick={() => window.open('https://wa.me/0817147639?text=Halo ADA, saya ingin memesan',"_blank")}>
+                    <ListItemButton onClick={() => window.open('https://wa.me/0817720797?text=Halo ADA, saya ingin memesan',"_blank")}>
                         <ListItemIcon>
                             <WhatsAppIcon />
                         </ListItemIcon>
@@ -40,11 +40,11 @@ export default function Contact() {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                    <ListItemButton onClick={() => window.open('https://wa.me/0817147639?text=Halo ADA, saya ingin memesan',"_blank")}>
+                    <ListItemButton onClick={() => window.open('https://wa.me/6287730902722?text=Halo ADA, saya ingin memesan',"_blank")}>
                         <ListItemIcon>
                             <WhatsAppIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Bapak Dedi, 0817-147-639" />
+                        <ListItemText primary="Admin ADA, 0877-3090-2722" />
                     </ListItemButton>
                 </ListItem>
                 </List>

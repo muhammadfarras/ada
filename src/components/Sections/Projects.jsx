@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
@@ -10,109 +10,170 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/misoa.jpg";
 import ProjectImg6 from "../../assets/img/projects/6.png";
+import CakeImage from "../../assets/img/projects/cake.jpg";
 import AddImage2 from "../../assets/img/add/add2.png";
+import DialogPizza from "../dialogs/DialogPizza";
+import DialogKueLebaran from "../dialogs/DialogKueLebaran";
+import DialogCatering from "../dialogs/DialogCatering";
+import DialogTahuWalik from "../dialogs/DialogTahuWalik";
+import DialogMisoa from "../dialogs/DialogMisoa";
+import DialogSoftCookies from "../dialogs/DialogSoftCookies";
+import DialogCake from "../dialogs/DialogCake";
+import { Alert } from "@mui/material";
+
+
+const dialogPizza = () => {
+
+}
+
+
+
 
 export default function Projects() {
-  return (
-    <Wrapper id="projects">
-      <div className="whiteBg">
-        <div className="container">
-          <HeaderInfo>
-            <h1 className="font40 extraBold">Menu yang kami sediakan</h1>
-            {/* <p className="font13">
-              Masakan yang kami sediakan untuk anda 
-            </p> */}
-          </HeaderInfo>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg1}
-                title="ADA Pizza"
-                text="Pizza home made dengan topping keju leleh, saus tomat buatan rumah, sosis sapi, dan jamur."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg2}
-                title="ADA Kue Lebaran"
-                text="Kue Nastar, kastengel, Sagu Keju, Putri Salju, dan Lidah Kucing."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg3}
-                title="ADA Katering"
-                text="Menu rumahan dengan berbagai pilihan lauk pauk."
-                action={() => alert("clicked")}
-              />
-            </div>
-          </div>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg4}
-                title="ADA Tahu Walik"
-                text="Tahu dengan isian daging dan aci di cocol dengan sambel kecap yang pedas."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg5}
-                title="ADA Misoa"
-                text="Gorengan Misoa dengan isian daging ayam/sapi cincang."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <ProjectBox
-                img={ProjectImg6}
-                title="ADA Soft Cookies"
-                text="Cookies renyah diluar lembut didalam."
-                action={() => alert("clicked")}
-              />
-            </div>
-          </div>
-          <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-              {/* <FullButton title="Load More" action={() => alert("clicked")} /> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <div className="lightBg">
-        <div className="container">
-          <Advertising className="flexSpaceCenter">
-            <AddLeft>
-              <AddLeftInner>
-                <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
-                </ImgWrapper>
-              </AddLeftInner>
-            </AddLeft>
-            <AddRight>
-              <h4 className="font15 semiBold">A few words about company</h4>
-              <h2 className="font40 extraBold">A Study of Creativity</h2>
-              <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              </p>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
-                <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClickOpenKueLebaran = () => {
+        setOpenKueLebaran(true);
+    };
+    const [openKueLebaran, setOpenKueLebaran] = React.useState(false);
+
+    const handleClickCatering = () => {
+        setOpenCatering(true);
+    };
+    const [openCatering, setOpenCatering] = React.useState(false);
+
+
+    const handleClickWalik = () => {
+        setOpenWalik(true);
+    };
+    const [openWalik, setOpenWalik] = React.useState(false);
+
+    const handleClickMisoa = () => {
+        setOpenMisoa(true);
+    };
+    const [openMisoa, setOpenMisoa] = React.useState(false);
+
+
+    const handleClickSoftCookies = () => {
+        setOpenSoftCookies(true);
+    };
+    const [openSoftCookies, setOpenSoftCookies] = React.useState(false);
+
+    const handleClickCake = () => {
+        setOpenCake(true);
+    };
+    const [openCake, setOpenCake] = React.useState(false);
+
+    const handleClose = () => {
+        setOpen(false);
+        setOpenKueLebaran(false);
+        setOpenCatering(false)
+        setOpenWalik(false)
+        setOpenMisoa(false)
+        setOpenSoftCookies(false)
+        setOpenCake(false)
+    };
+
+    useEffect(() => {
+
+        console.log(open)
+
+    }, [])
+    return (
+        <Wrapper id="projects">
+
+            <div className="whiteBg">
+                <div className="container">
+                    <HeaderInfo>
+                        <h1 className="font40 extraBold">Menu yang kami sediakan</h1>
+                        <Alert severity="success">
+                            Click gambar untuk melihat harga dan pemesanan
+                        </Alert>
+                    </HeaderInfo>
+                    <div className="row textCenter">
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg1}
+                                title="ADA Pizza"
+                                text="Pizza home made dengan topping keju leleh, saus tomat buatan rumah, sosis sapi, dan jamur."
+                                action={handleClickOpen}
+                            />
+                        </div>
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg2}
+                                title="ADA Kue Lebaran"
+                                text="Kue Nastar, kastengel, Sagu Keju, Putri Salju, dan Lidah Kucing."
+                                action={handleClickOpenKueLebaran}
+                            />
+                        </div>
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg3}
+                                title="ADA Katering"
+                                text="Menu rumahan dengan berbagai pilihan lauk pauk."
+                                action={handleClickCatering}
+                            />
+                        </div>
+                    </div>
+                    <div className="row textCenter">
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg4}
+                                title="ADA Tahu Walik"
+                                text="Tahu dengan isian daging dan aci di cocol dengan sambel kecap yang pedas."
+                                action={handleClickWalik}
+                            />
+                        </div>
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg5}
+                                title="ADA Misoa"
+                                text="Gorengan Misoa dengan isian daging ayam/sapi cincang."
+                                action={handleClickMisoa}
+                            />
+                        </div>
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={ProjectImg6}
+                                title="ADA Soft Cookies"
+                                text="Cookies renyah diluar lembut didalam."
+                                action={handleClickSoftCookies}
+                            />
+                        </div>
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <ProjectBox
+                                img={CakeImage}
+                                title="ADA Cake"
+                                text="Aneka macam kue panggang dengan variasa rasa yang menarik."
+                                action={handleClickCake}
+                            />
+                        </div>
+                    </div>
+                    <div className="row flexCenter">
+                        <div style={{ margin: "50px 0", width: "200px" }}>
+                            {/* <FullButton title="Load More" action={() => alert("clicked")} /> */}
+                        </div>
+                    </div>
                 </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                </div>
-              </ButtonsRow>
-            </AddRight>
-          </Advertising>
-        </div>
-      </div> */}
-    </Wrapper>
-  );
+            </div>
+
+            <DialogPizza isOpen={open} handleClose={handleClose} />
+            <DialogKueLebaran isOpen={openKueLebaran} handleClose={handleClose} />
+            <DialogCatering isOpen={openCatering} handleClose={handleClose} />
+            <DialogTahuWalik isOpen={openWalik} handleClose={handleClose} />
+            <DialogMisoa isOpen={openMisoa} handleClose={handleClose} />
+            <DialogSoftCookies isOpen={openSoftCookies} handleClose={handleClose} />
+            <DialogCake isOpen={openCake} handleClose={handleClose} />
+
+
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.section`

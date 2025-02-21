@@ -16,8 +16,8 @@ export default function Header() {
           <HeaderP className="font13 semiBold">
             Menyediakan berbagai menu makan yang Halal dan sehat. Makanan rumahan dengan rasa yang mewah dan hangat seperti masakan Ibu.
           </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Pesan Disini" />
+          <BtnWrapper onClick={() => window.open('https://wa.me/6287730902722?text=Halo ADA, saya ingin memesan',"_blank")}>
+            {/* <FullButton title="Pesan Disini" /> */}
           </BtnWrapper>
         </div>
       </LeftSide>
@@ -30,9 +30,9 @@ export default function Header() {
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Masakan yang terenak dan sehat adalah makanan yang dimasak dengan cinta dan tangan seorang Ibu.</em>
+                <em>Free Ongkir untuk daerah Telaga Kahuripan dan sekitar...</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Manusia Bijak</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Lihat Menu, Chat Kami, Kami Antar</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
