@@ -1,9 +1,15 @@
 {
   "files": {
     "main.css": "/ada/static/css/main.f49dbd35.css",
-    "main.js": "/ada/static/js/main.99c315d2.js",
+    "main.js": "/ada/static/js/main.32f68d60.js",
     "static/js/453.e714295e.chunk.js": "/ada/static/js/453.e714295e.chunk.js",
+    "static/media/walik.png": "/ada/static/media/walik.86dc052b88baf5d53e82.png",
+    "static/media/pizza.jpg": "/ada/static/media/pizza.0ee3c9b1c52ff905409b.jpg",
+    "static/media/softcookies.jpg": "/ada/static/media/softcookies.c2b52454da462994ee62.jpg",
     "static/media/misoa.jpg": "/ada/static/media/misoa.8f3783e960e15812253f.jpg",
+    "static/media/front.jpg": "/ada/static/media/front.fef127d8e3c875ac8cb3.jpg",
+    "static/media/catering.jpg": "/ada/static/media/catering.663f56e8cf72347476f5.jpg",
+    "static/media/kuelebaran.jpg": "/ada/static/media/kuelebaran.c236a449f425ed6ea857.jpg",
     "static/media/cake.jpg": "/ada/static/media/cake.c764a1d15e5030c8253d.jpg",
     "static/media/logo02.svg": "/ada/static/media/logo02.ef3dc4768d89bf758521d844dc1406e2.svg",
     "static/media/logo01.svg": "/ada/static/media/logo01.f0f3765fa14836d794809c38f220dbb8.svg",
@@ -17,11 +23,11 @@
     "static/media/slick.woff": "/ada/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ada/index.html",
     "main.f49dbd35.css.map": "/ada/static/css/main.f49dbd35.css.map",
-    "main.99c315d2.js.map": "/ada/static/js/main.99c315d2.js.map",
+    "main.32f68d60.js.map": "/ada/static/js/main.32f68d60.js.map",
     "453.e714295e.chunk.js.map": "/ada/static/js/453.e714295e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f49dbd35.css",
-    "static/js/main.99c315d2.js"
+    "static/js/main.32f68d60.js"
   ]
 }
