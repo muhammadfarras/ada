@@ -45,7 +45,8 @@ const MenuMenu = () => {
     }
 
     const datas = [
-        createData("Soft Cookies Paket 1", "Rp30.000,00", "1 toples isi 7 soft cookies")
+        createData("Soft Cookies Original", "Rp35.000,00", "1 toples isi 7 soft cookies"),
+        createData("Soft Cookies Red Velvet With Cream Cheese", "Rp49.000,00", "Perpaduan brown sugar, cocoa powder, cream cheese dan racikan ADA. 1 Toples isi 7 soft cookies")
     ]
 
 

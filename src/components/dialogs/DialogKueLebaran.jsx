@@ -45,11 +45,11 @@ const MenuMenu = () => {
     }
 
     const datas = [
-        createData("Nastar", "Rp95.000,00", "-"),
-        createData("Sagu Keju", "Rp75.000,00", "-"),
-        createData("Kastengel", "Rp75.000,00", "-"),
-        createData("Putri Salju", "Rp75.000,00", "-"),
-        createData("Lidah Kucing", "Rp75.000,00", "-"),
+        createData("Nastar", "Rp100.000,00", "-"),
+        createData("Sagu Keju", "Rp80.000,00", "-"),
+        createData("Kastengel", "Rp100.000,00", "-"),
+        createData("Putri Salju", "Rp80.000,00", "-"),
+        createData("Lidah Kucing", "Rp60.000,00", "-"),
     ]
 
 
